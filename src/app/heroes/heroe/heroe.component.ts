@@ -8,11 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class HeroeComponent implements OnInit {
   nombre = 'Ironman';
   edad = 45;
-  obtenerNombre(){
+  get nombreCapitalizado() {
+    return this.nombre.toUpperCase();
+  }
+  obtenerNombre() {
     return `${this.nombre} - ${this.edad}`;
   }
-  get nombreCapitalizado (){
-    return this.nombre.toUpperCase();
+  cambiarNombre(): void {
+    this.nombre = 'Spiderman';
+  }
+  cambiarEdad(): void{
+    this.edad = 85;
   }
   constructor() {}
 
