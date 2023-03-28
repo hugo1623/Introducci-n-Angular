@@ -8,8 +8,6 @@ import { Component} from '@angular/core';
 export class ContadorComponent {
 
   constructor() { }
-
-
   title = 'Contador App';
   numero = 10;
   base = 5;
